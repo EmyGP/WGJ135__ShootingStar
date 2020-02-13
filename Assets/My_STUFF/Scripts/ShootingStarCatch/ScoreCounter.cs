@@ -8,11 +8,16 @@ public class ScoreCounter : MonoBehaviour
     public int score;
     public Text scoreText;
 
+    private void Start()
+    {
+        score = 0;
+        scoreText.text = " ";
+    }
+
     public void ScoreFunction()
     {
         score = score + 1;
         scoreText.text = " " + Mathf.Round(score);
-        //scivi sul text il punteggio nuovo
         Debug.Log("+1");
     }
 }
