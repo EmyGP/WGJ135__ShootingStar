@@ -306,7 +306,7 @@ GameObject:
   - component: {fileID: 208587279}
   - component: {fileID: 208587278}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: DownerBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 208587276}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2843ebd3b0e39754c90a067018c2b32b, type: 3}
+  m_Script: {fileID: 11500000, guid: 10cd62b5434892d40a539dfa7e011e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &208587279
