@@ -9,7 +9,8 @@ public class PBall_behavior : MonoBehaviour
     {
         if (other.tag == "asteroid")
         {
-            other.gameObject.SetActive(false);
+            //other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
             //distruggi asteroide
             //animazioni bellissime
             //aumenta lo score
