@@ -8,6 +8,7 @@ public class ShooterTimer : MonoBehaviour
     public float timerShoot_1 = 10;
 
     public Spawner1 shootStars;
+    public Spawner1 shootStars2;
 
     void Start()
     {
@@ -23,12 +24,9 @@ public class ShooterTimer : MonoBehaviour
             yield return null;
         }
         shootStars.ShootStars();
+        shootStars2.ShootStars();
+        //timerShoot_1 = 8;
         yield return null;
-        //else if (timerShoot_1 <= 0)
-        //{
-        //    //shoot altre stelle
-        //    timerShoot_1 = 10;
-        //}
     }
 
     // ci vorrebbe più una coroutine così posso fermarla
