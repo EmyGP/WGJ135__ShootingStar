@@ -65,6 +65,7 @@
     <Compile Include="Assets\My_STUFF\Scripts\PlayerController.cs" />
     <Compile Include="Assets\My_STUFF\Scripts\SceneManager.cs" />
     <Compile Include="Assets\My_STUFF\Scripts\ShooterTimer.cs" />
+    <Compile Include="Assets\My_STUFF\Scripts\ShootingStarCatch\MM_Manager.cs" />
     <Compile Include="Assets\My_STUFF\Scripts\ShootingStarCatch\MouseBehavior.cs" />
     <Compile Include="Assets\My_STUFF\Scripts\ShootingStarCatch\MouseBehavior1.cs" />
     <Compile Include="Assets\My_STUFF\Scripts\ShootingStarCatch\ScoreCounter.cs" />

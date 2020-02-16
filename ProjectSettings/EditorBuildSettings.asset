@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/SSC_Menu.unity
+    guid: aadfb82ecbb60dd42b762c89e009a11c
+  - enabled: 1
     path: Assets/Scenes/ShootingStarCatch 1.unity
     guid: a5bd61e854a419945bc8463981327e28
   m_configObjects: {}

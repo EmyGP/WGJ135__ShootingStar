@@ -9,18 +9,23 @@ public class ScoreCounter : MonoBehaviour
     public int score = 0;
     public Text scoreText;
 
-    public float timerGame = 60;
+    public float timerGame;
     public Text winText;
     public Text schifText;
     public GameObject restartButton;
+    public GameObject backButton;
     public GameObject spawner;
+
+    public GameObject darkSky;
 
     private void Start()
     {
         spawner.SetActive(true);
         restartButton.SetActive(false);
+        backButton.SetActive(false);
         score = 0;
         scoreText.text = "SCORE: " + Mathf.Round(score);
+        StartCoroutine("Fade");
     }
 
     public void ScoreFunction()
@@ -34,15 +39,25 @@ public class ScoreCounter : MonoBehaviour
     {
         if (score > 0)
         {
-            //messaggio: hai beccato ___ stelle! speriamo che il desiderio si avveri
             winText.enabled = true;
         }
         else if (score <= 0)
         {
-            //fai schifo, non realizzerai mai i tuoi sogni. opure hai bisogno degli occhiali.
             schifText.enabled = true;
         }
         restartButton.SetActive(true);
+        backButton.SetActive(true);
+    }
+
+    IEnumerator Fade()
+    {
+        for (float ft = 1; ft >= 0; ft -= 0.025f*Time.deltaTime)
+        {
+            Color c = darkSky.GetComponent<SpriteRenderer>().color;
+            c.a = ft;
+            darkSky.GetComponent<SpriteRenderer>().color = c;
+            yield return null;
+        }
     }
 
     private void Update()
@@ -56,10 +71,5 @@ public class ScoreCounter : MonoBehaviour
             spawner.SetActive(false);
             EndScreen();
         }
-    }
-
-    public void RestartGameButton()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 }
