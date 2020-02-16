@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PBall
   - asteroid
+  - GameManager
   layers:
   - Default
   - TransparentFX

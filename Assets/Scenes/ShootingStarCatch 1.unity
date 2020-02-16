@@ -1840,7 +1840,7 @@ GameObject:
   - component: {fileID: 2770498061420793211}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1859,8 +1859,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreText: {fileID: 1455493544969108702}
-  starPrefab: {fileID: 4284403419271272392, guid: 6b89fa790f340274fa0a5ca3d1a9c73e,
-    type: 3}
 --- !u!114 &2770498061420793212
 MonoBehaviour:
   m_ObjectHideFlags: 0
