@@ -1824,7 +1824,7 @@ GameObject:
   - component: {fileID: 1958903054}
   m_Layer: 0
   m_Name: ShooterS
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2064,7 +2064,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerGame: 60
-  timerShoot_1: 1
+  timerShoot_1: 3
+  shootStars: {fileID: 1958903054}
 --- !u!222 &5047594764786486755
 CanvasRenderer:
   m_ObjectHideFlags: 0

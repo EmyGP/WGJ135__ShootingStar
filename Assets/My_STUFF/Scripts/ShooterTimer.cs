@@ -5,31 +5,29 @@ using UnityEngine;
 public class ShooterTimer : MonoBehaviour
 {
     public float timerGame = 60;
-    public float timerShoot_1 = 1;
-    // Start is called before the first frame update
+    public float timerShoot_1 = 10;
+
+    public Spawner1 shootStars;
+
     void Start()
     {
-        StartCoroutine("TimerShooter");      
+        StartCoroutine("TimerShooter");
     }
 
     //coroutine che gestisce il timer degli spawn point. Quando il timer arriv a a0 lo spawn deve sparare di nuovo e il timer ripartire
     IEnumerator TimerShooter()
     {
-        for(float i = 60; i > timerShoot_1; i--)
+        while (timerShoot_1 > 0)
         {
-            timerShoot_1 -= i*timerShoot_1*Time.deltaTime;
+            timerShoot_1 -= Time.deltaTime;
             yield return null;
         }
-        //if (timerShoot_1 >= 0)
-        //{
-        //    timerShoot_1 -= Time.deltaTime;
-        //    yield return timerShoot_1;
-        //}
-        //else
+        shootStars.ShootStars();
+        yield return null;
+        //else if (timerShoot_1 <= 0)
         //{
         //    //shoot altre stelle
         //    timerShoot_1 = 10;
-        //    yield return null;
         //}
     }
 
