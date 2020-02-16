@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ShooterTimer : MonoBehaviour
 {
-    public float timerGame = 60;
     public float timerShoot_1 = 10;
     public float timerShootBis;
 
@@ -31,7 +30,6 @@ public class ShooterTimer : MonoBehaviour
     // ci vorrebbe più una coroutine così posso fermarla
     void Update()
     {
-        timerGame -= Time.deltaTime; 
         if (timerShoot_1 <= 0)
         {
             StartCoroutine("TimerShooter");
