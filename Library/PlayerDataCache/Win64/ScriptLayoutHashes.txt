@@ -1,7 +1,8 @@
 Win64
 PlayerPath?
-C:/Users/EmyGP/Desktop/WGJ135_ShootingStar/New Unity Project.exe
+C:/Users/EmyGP/Desktop/WGJ135_ShootingStar/Shooting Star Catch.exe
 SceneListBegin?
+Assets/Scenes/SSC_Menu.unity
 Assets/Scenes/ShootingStarCatch 1.unity
 SceneListEnd?
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.MouseBehavior1
@@ -123,7 +124,7 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
-7d7046d35d63109db10ae591e8445b7f Assembly-CSharp.dll:.ScoreCounter
+ac08db2d6bb7ad756671479d6e8d2cb1 Assembly-CSharp.dll:.ScoreCounter
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:ProGrids.pg_IgnoreSnap
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -168,3 +169,4 @@ c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 959a0c4b9a1f21d582d3ef01fad24225 Assembly-CSharp.dll:.Spawner1
 18174276d41afa5adfe1dc2a99ecc2d4 Assembly-CSharp.dll:.MouseBehavior
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.MM_Manager
