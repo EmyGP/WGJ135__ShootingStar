@@ -1014,6 +1014,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1062042460}
   - component: {fileID: 1062042459}
+  - component: {fileID: 1062042461}
   m_Layer: 0
   m_Name: ShooterS (1)
   m_TagString: Respawn
@@ -1073,6 +1074,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1062042461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062042458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb597ab2aee1acd46b370fcafbb68548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerGame: 60
+  timerShoot_1: 6
+  timerShootBis: 2
+  shootStars: {fileID: 1062042459}
 --- !u!1 &1093973192
 GameObject:
   m_ObjectHideFlags: 0
@@ -1773,6 +1790,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1958903053}
   - component: {fileID: 1958903054}
+  - component: {fileID: 1958903055}
   m_Layer: 0
   m_Name: ShooterS
   m_TagString: Respawn
@@ -1832,6 +1850,22 @@ MonoBehaviour:
   asteroidRb: {fileID: 9015188358136306990, guid: 6b89fa790f340274fa0a5ca3d1a9c73e,
     type: 3}
   shootForce: 300
+--- !u!114 &1958903055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958903052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb597ab2aee1acd46b370fcafbb68548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerGame: 60
+  timerShoot_1: 3
+  timerShootBis: 4
+  shootStars: {fileID: 1958903054}
 --- !u!1 &2047847237
 GameObject:
   m_ObjectHideFlags: 0
@@ -2039,15 +2073,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2770498061420793210}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb597ab2aee1acd46b370fcafbb68548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timerGame: 60
   timerShoot_1: 3
+  timerShootBis: 0
   shootStars: {fileID: 1958903054}
-  shootStars2: {fileID: 1062042459}
 --- !u!222 &5047594764786486755
 CanvasRenderer:
   m_ObjectHideFlags: 0

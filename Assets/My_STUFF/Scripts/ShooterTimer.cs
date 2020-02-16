@@ -6,9 +6,9 @@ public class ShooterTimer : MonoBehaviour
 {
     public float timerGame = 60;
     public float timerShoot_1 = 10;
+    public float timerShootBis;
 
     public Spawner1 shootStars;
-    public Spawner1 shootStars2;
 
     void Start()
     {
@@ -24,14 +24,17 @@ public class ShooterTimer : MonoBehaviour
             yield return null;
         }
         shootStars.ShootStars();
-        shootStars2.ShootStars();
-        //timerShoot_1 = 8;
+        timerShoot_1 = timerShootBis;
         yield return null;
     }
 
     // ci vorrebbe più una coroutine così posso fermarla
     void Update()
     {
-        timerGame -= Time.deltaTime;      
+        timerGame -= Time.deltaTime; 
+        if (timerShoot_1 <= 0)
+        {
+            StartCoroutine("TimerShooter");
+        }
     }
 }
