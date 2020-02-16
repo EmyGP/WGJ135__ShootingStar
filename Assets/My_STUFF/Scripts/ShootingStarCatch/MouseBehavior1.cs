@@ -21,7 +21,7 @@ public class MouseBehavior1 : MonoBehaviour
     }
 
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         scoreCounter.ScoreFunction();
         starCollider.enabled = false;

@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4284403419271272372}
   - component: {fileID: 4284403419271272373}
   - component: {fileID: 4284403419271272374}
-  - component: {fileID: 4284403419271272370}
   - component: {fileID: 9015188358136306990}
   m_Layer: 0
   m_Name: star
@@ -201,20 +200,6 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!114 &4284403419271272370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4284403419271272392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07f4cb6f38e0d694e9319ee39da555f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreCounter: {fileID: 2770498060682021624, guid: 1be71f3beea6fe24d907a9225cb2765f,
-    type: 3}
 --- !u!50 &9015188358136306990
 Rigidbody2D:
   serializedVersion: 4
